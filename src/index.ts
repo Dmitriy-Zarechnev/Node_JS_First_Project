@@ -14,7 +14,7 @@ app.use('/products', productRouter)
 app.use('/addresses', addressRouter)
 
 
-// start app
+
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
 })

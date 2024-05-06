@@ -1,6 +1,6 @@
 import {Router, Request, Response} from 'express'
 
-// types for APP
+
 type Addresses = {
     id: number,
     value: string
@@ -10,7 +10,7 @@ const addresses: Addresses[] = [{id: 1, value: 'Street 15'}, {id: 2, value: 'Str
 
 export const addressRouter = Router({})
 
-// get request
+
 addressRouter.get('/', (req: Request, res: Response) => {
     res.send(addresses)
 })
