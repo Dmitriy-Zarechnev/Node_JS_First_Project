@@ -4,8 +4,8 @@
   "main": "src/index.ts",
   "license": "MIT",
   "scripts": {
-    "watch":"tsc -w",
-    "dev":"nodemon --inspect dist/index.js"
+    "watch": "tsc -w",
+    "dev": "nodemon --inspect dist/index.js"
   },
   "dependencies": {
     "express": "^4.19.2"
