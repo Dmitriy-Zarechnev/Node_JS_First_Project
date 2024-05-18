@@ -12,5 +12,4 @@ export const addressesRepository = {
     findAddressById(addressId: number) {
         return addresses.find((el) => el.id === addressId)
     }
-
 }
