@@ -14,6 +14,8 @@ export const addressRouter = Router({})
 addressRouter.get('/', (req: Request, res: Response) => {
     res.send(addresses)
 })
+
+
 addressRouter.get('/:id', (req: Request, res: Response) => {
     let address = addresses.find((el) => el.id === +req.params.id)
 
