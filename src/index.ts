@@ -1,8 +1,7 @@
-import express, {NextFunction, Request, Response} from 'express'
+import express from 'express'
 import bodyParser from 'body-parser'
 import {productRouter} from './routes/products-router'
 import {addressRouter} from './routes/addresses-router'
-import {addressesRepository} from './repositories/addresses-repository'
 
 // create express app
 const app = express()

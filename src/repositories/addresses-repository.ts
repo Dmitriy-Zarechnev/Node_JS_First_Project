@@ -9,6 +9,7 @@ export const addressesRepository = {
     getAddress() {
         return addresses
     },
+
     findAddressById(addressId: number) {
         return addresses.find((el) => el.id === addressId)
     }

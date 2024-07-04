@@ -12,12 +12,15 @@ export const productsRepository = {
             return products
         }
     },
+
     getProductByTitle(productTitle: string) {
         return products.find((el) => el.title === productTitle)
     },
+
     getProductById(productId: number) {
         return products.find((el) => el.id === productId)
     },
+
     createProduct(newProductTitle: string) {
         const newProduct = {
             id: +(new Date()),
@@ -27,6 +30,7 @@ export const productsRepository = {
         products.push(newProduct)
         return newProduct
     },
+
     updateProduct(productId: number, productTitle: string) {
         let product = products.find((el) => el.id === productId)
 
@@ -37,6 +41,7 @@ export const productsRepository = {
             return false
         }
     },
+
     deleteProduct(productId: number) {
         for (let i = 0; i < products.length; i++) {
             if (products[i].id === productId) {
